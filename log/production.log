@@ -1,0 +1,738 @@
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:02:11) [GET]
+  Session ID: 098d48a806a733a5dfbd9326a88a7e8b
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:02:11) [GET]
+  Session ID: 098d48a806a733a5dfbd9326a88a7e8b
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+MissingSourceFile (no such file to load -- sqlite3/database):
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:32:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:32:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.2/lib/sqlite3.rb:1
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:32:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:32:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:292:in `connection='
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:260:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:05:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:06:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:06:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:07:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:07:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:07:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:07:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Completed in 0.00533 (187 reqs/sec) | Rendering: 0.00104 (19%) | DB: 0.00000 (0%) | 200 OK [http://text.burkelibbey.org/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:12:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Completed in 0.00062 (1623 reqs/sec) | Rendering: 0.00041 (66%) | DB: 0.00000 (0%) | 200 OK [http://text.burkelibbey.org/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:12:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Completed in 0.00071 (1418 reqs/sec) | Rendering: 0.00048 (67%) | DB: 0.00000 (0%) | 200 OK [http://text.burkelibbey.org/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:12:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: books: SELECT * FROM "books"     ):
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:360:in `catch_schema_changes'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:263:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:80:in `cache_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:582:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1341:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:536:in `find'
+    /app/controllers/books_controller.rb:4:in `index'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:13:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+
+
+ActiveRecord::StatementInvalid (SQLite3::SchemaChangedException: no such table: books: SELECT * FROM "books"     ):
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:360:in `catch_schema_changes'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:263:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:80:in `cache_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:582:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1341:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:536:in `find'
+    /app/controllers/books_controller.rb:4:in `index'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:13:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Rendering books/index
+Completed in 0.00335 (298 reqs/sec) | Rendering: 0.00189 (56%) | DB: 0.00090 (26%) | 200 OK [http://text.burkelibbey.org/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:13:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Rendering books/index
+Completed in 0.00199 (503 reqs/sec) | Rendering: 0.00100 (50%) | DB: 0.00035 (17%) | 200 OK [http://text.burkelibbey.org/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 19:14:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Rendering books/index
+Completed in 0.00166 (600 reqs/sec) | Rendering: 0.00082 (49%) | DB: 0.00030 (17%) | 200 OK [http://text.burkelibbey.org/]

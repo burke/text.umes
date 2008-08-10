@@ -1,0 +1,28 @@
+%p
+  %b Title:
+  =h @book.title
+
+%p
+  %b Author:
+  =h @book.author
+
+%p
+  %b Seller:
+  =h @book.seller
+
+%p
+  %b Price:
+  =h @book.price
+
+%p
+  %b Comments:
+  =h @book.comments
+
+%p
+  %b Isbn:
+  =h @book.isbn
+
+
+= link_to 'Edit', edit_book_path(@book)
+%br/
+= link_to 'Back', books_path

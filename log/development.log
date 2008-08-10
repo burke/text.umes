@@ -1,0 +1,227 @@
+  [4;36;1mSQL (0.000535)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000389)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.035315)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.004420)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000635)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20080803015923)
+  [4;36;1mSQL (0.000122)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.019193)[0m   [0mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL, "author" varchar(255) DEFAULT NULL NULL, "seller" varchar(255) DEFAULT NULL NULL, "price" integer DEFAULT NULL NULL, "comments" text DEFAULT NULL NULL, "isbn" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.006888)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080803015923')[0m
+  [4;35;1mSQL (0.000399)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000342)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000107)[0m   [0mPRAGMA index_list("books")[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2008-08-02 19:07:37) [GET]
+  Session ID: 58d854bb4bb018ee75d813c5db77d469
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Completed in 0.00396 (252 reqs/sec) | Rendering: 0.00037 (9%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:09:40) [GET]
+  Session ID: 0155bd3e1973ae1dbf63605b065edb87
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.001820)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.02735 (36 reqs/sec) | Rendering: 0.00426 (15%) | DB: 0.00182 (6%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:14:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;35;1mBook Load (0.000502)[0m   [0mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.01040 (96 reqs/sec) | Rendering: 0.00100 (9%) | DB: 0.00050 (4%) | 200 OK [http://newtext.umes.mb.ca/]
+  [4;36;1mSQL (0.000950)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000591)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20080803015923)
+  [4;36;1mSQL (0.000262)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001442)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000648)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000521)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mPRAGMA index_list("books")[0m
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:14:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.000495)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.00988 (101 reqs/sec) | Rendering: 0.00090 (9%) | DB: 0.00050 (5%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:15:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;35;1mBook Load (0.000606)[0m   [0mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.01368 (73 reqs/sec) | Rendering: 0.00268 (19%) | DB: 0.00061 (4%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:17:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.000728)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.01311 (76 reqs/sec) | Rendering: 0.00069 (5%) | DB: 0.00073 (5%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:22:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;35;1mBook Load (0.000478)[0m   [0mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.01360 (73 reqs/sec) | Rendering: 0.00462 (33%) | DB: 0.00048 (3%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-02 22:22:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering books/new
+Completed in 0.02077 (48 reqs/sec) | Rendering: 0.00930 (44%) | DB: 0.00000 (0%) | 200 OK [http://newtext.umes.mb.ca/books/new]
+
+
+Processing BooksController#create (for 207.161.48.128 at 2008-08-02 22:22:42) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzBhY2FiMDFiYjg2MzIyNWJiNDcyNWNhNTg1OTc2
+Y2MiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--15e4c928a93ea73ec4dbef8c92c267f51f5a1e16
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"20d445cdcc06d33131df5445197521edf9c753fc", "action"=>"create", "controller"=>"books", "book"=>{"seller"=>"umlibbey", "price"=>"40", "title"=>"The Rails Way", "author"=>"fernandez", "comments"=>"Perfect condition. Almost brand new, barely opened.", "isbn"=>"0321445619"}}
+  [4;36;1mBook Create (0.000707)[0m   [0;1mINSERT INTO "books" ("seller", "price", "created_at", "title", "author", "comments", "isbn", "updated_at") VALUES('umlibbey', 40, '2008-08-03 05:22:42', 'The Rails Way', 'fernandez', 'Perfect condition. Almost brand new, barely opened.', '0321445619', '2008-08-03 05:22:42')[0m
+Redirected to http://newtext.umes.mb.ca/books/1
+Completed in 0.30421 (3 reqs/sec) | DB: 0.00071 (0%) | 302 Found [http://newtext.umes.mb.ca/books]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-02 22:22:43) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiI0Jvb2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LgY6CkB1c2VkewY7BkY6DGNzcmZfaWQiJTMwYWNhYjAxYmI4NjMyMjViYjQ3
+MjVjYTU4NTk3NmNj--2b719e46395ec3bd2b2bcdf534a5ff0eb5518362
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"books"}
+  [4;35;1mBook Load (0.000598)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Rendering books/show
+Completed in 0.02084 (47 reqs/sec) | Rendering: 0.00722 (34%) | DB: 0.00060 (2%) | 200 OK [http://newtext.umes.mb.ca/books/1]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:22:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzBhY2FiMDFiYjg2MzIyNWJiNDcyNWNhNTg1OTc2
+Y2MiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNCb29rIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G
+OgpAdXNlZHsGOwdU--abaa190260d96b9c272cdf84c74153c3bc465c2f
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.000837)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.05636 (17 reqs/sec) | Rendering: 0.00650 (11%) | DB: 0.00084 (1%) | 200 OK [http://newtext.umes.mb.ca/books]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-02 22:22:49) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMzBhY2FiMDFiYjg2MzIyNWJi
+NDcyNWNhNTg1OTc2Y2M=--8a54b3c4124700bd8a378a34c14102f83b58b600
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"books"}
+  [4;35;1mBook Load (0.000561)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Rendering books/show
+Completed in 0.03480 (28 reqs/sec) | Rendering: 0.00340 (9%) | DB: 0.00056 (1%) | 200 OK [http://newtext.umes.mb.ca/books/1]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:22:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzBhY2FiMDFiYjg2MzIyNWJiNDcyNWNhNTg1OTc2
+Y2MiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--15e4c928a93ea73ec4dbef8c92c267f51f5a1e16
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.001509)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.01688 (59 reqs/sec) | Rendering: 0.00674 (39%) | DB: 0.00151 (8%) | 200 OK [http://newtext.umes.mb.ca/books]
+
+
+Processing BooksController#edit (for 207.161.48.128 at 2008-08-02 22:22:51) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMzBhY2FiMDFiYjg2MzIyNWJi
+NDcyNWNhNTg1OTc2Y2M=--8a54b3c4124700bd8a378a34c14102f83b58b600
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"books"}
+  [4;35;1mBook Load (0.002281)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Rendering books/edit
+Completed in 0.18348 (5 reqs/sec) | Rendering: 0.01462 (7%) | DB: 0.00228 (1%) | 200 OK [http://newtext.umes.mb.ca/books/1/edit]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:22:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMzBhY2FiMDFiYjg2MzIyNWJiNDcyNWNhNTg1OTc2
+Y2MiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--15e4c928a93ea73ec4dbef8c92c267f51f5a1e16
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.000978)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.01903 (52 reqs/sec) | Rendering: 0.00726 (38%) | DB: 0.00098 (5%) | 200 OK [http://newtext.umes.mb.ca/books]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-02 22:23:13) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMzBhY2FiMDFiYjg2MzIyNWJi
+NDcyNWNhNTg1OTc2Y2M=--8a54b3c4124700bd8a378a34c14102f83b58b600
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;35;1mBook Load (0.001031)[0m   [0mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.01904 (52 reqs/sec) | Rendering: 0.00711 (37%) | DB: 0.00103 (5%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 198.163.152.202 at 2008-08-05 11:25:11) [GET]
+  Session ID: 6fd4aa151b02cf15d2db80da3aeb138f
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.022690)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.08159 (12 reqs/sec) | Rendering: 0.02966 (36%) | DB: 0.02269 (27%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-05 21:37:17) [GET]
+  Session ID: 108a1e3a4f5775cf1bf269474b17877d
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.002226)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.02972 (33 reqs/sec) | Rendering: 0.01482 (49%) | DB: 0.00223 (7%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-08 12:40:43) [GET]
+  Session ID: 9e7f29fd68b1ecef1e36e4b97772e226
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.001689)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.02630 (38 reqs/sec) | Rendering: 0.01361 (51%) | DB: 0.00169 (6%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-10 15:19:03) [GET]
+  Session ID: 5b599f9bd7b32fa9a74c20043e046ff5
+  Parameters: {"action"=>"index", "controller"=>"books"}
+  [4;36;1mBook Load (0.001161)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering books/index
+Completed in 0.02704 (36 reqs/sec) | Rendering: 0.01457 (53%) | DB: 0.00116 (4%) | 200 OK [http://newtext.umes.mb.ca/]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-10 15:20:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTgwNWMxZjM1ZmU5MWU2NDAwM2E3MTBlNWNjZDM1
+N2IiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7b0b15fa4a345bc7f9508193f4bee2582400c0af
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"books"}
+  [4;35;1mBook Load (0.000579)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Rendering books/show
+Completed in 0.04463 (22 reqs/sec) | Rendering: 0.03154 (70%) | DB: 0.00058 (1%) | 200 OK [http://newtext.umes.mb.ca/books/1]
