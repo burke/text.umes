@@ -17,7 +17,7 @@ class BooksController < ApplicationController
       @searched = true
       @books = Book.search(params[:query])
     else
-      @books = Book.find :all
+      @books = Book.paginate :page => params[:page]
     end
 
     respond_to do |format|

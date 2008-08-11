@@ -9,14 +9,4 @@
     %th Comments
     %th Isbn
 
-  - for book in @books 
-    %tr
-      %td=h book.title
-      %td=h book.author
-      %td=h book.seller
-      %td=h number_to_currency book.price
-      %td=h book.comments
-      %td=h book.isbn
-      %td= link_to 'Show', book
-      %td= link_to 'Edit', edit_book_path(book)
-      %td= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete
+  = render :partial => @books
