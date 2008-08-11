@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :title
       t.string :author
       t.string :seller
-      t.integer :price
+      t.decimal :price
       t.text :comments
       t.string :isbn
 
