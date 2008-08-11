@@ -7,7 +7,8 @@ class CreateBooks < ActiveRecord::Migration
       t.decimal :price
       t.text :comments
       t.string :isbn
-
+      t.boolean :delta
+      
       t.timestamps
     end
   end

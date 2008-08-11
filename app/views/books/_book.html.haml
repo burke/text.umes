@@ -1,10 +1,7 @@
 %tr
-  %td=h book.title
+  %td= link_to h(book.title), book
   %td=h book.author
   %td=h book.seller
-  %td=h number_to_currency book.price
-  %td=h book.comments
+  %td= number_to_currency book.price
   %td=h book.isbn
-  %td= link_to 'Show', book
-  %td= link_to 'Edit', edit_book_path(book)
-  %td= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete
+  %td= image_tag book.thumbnail_url

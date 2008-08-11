@@ -3,3 +3,24 @@
 [Sun Aug 10 18:53:52.121 2008] [ 5392] rotating indices (seamless=1)
 [Sun Aug 10 18:53:53.123 2008] [ 5392] rotating index 'book_core': success
 [Sun Aug 10 18:53:53.123 2008] [ 5392] rotating finished
+[Sun Aug 10 20:05:06.679 2008] [ 5392] rotating indices (seamless=1)
+[Sun Aug 10 20:05:07.702 2008] [ 5392] rotating index 'book_core': success
+[Sun Aug 10 20:05:07.702 2008] [ 5392] rotating finished
+[Sun Aug 10 21:46:21.977 2008] [ 5392] rotating indices (seamless=1)
+[Sun Aug 10 21:46:22.977 2008] [ 5392] rotating index 'book_core': success
+[Sun Aug 10 21:46:22.977 2008] [ 5392] rotating finished
+[Sun Aug 10 21:51:28.908 2008] [ 5392] caught SIGTERM, shutting down
+[Sun Aug 10 21:51:28.909 2008] [ 5392] shutdown complete
+[Sun Aug 10 21:51:42.855 2008] [ 6534] creating server socket on 127.0.0.1:3312
+[Sun Aug 10 21:51:42.855 2008] [ 6534] accepting connections
+[Sun Aug 10 21:53:44.925 2008] [ 6534] caught SIGTERM, shutting down
+[Sun Aug 10 21:53:44.925 2008] [ 6534] shutdown complete
+[Sun Aug 10 21:54:06.989 2008] [ 6590] creating server socket on 127.0.0.1:3312
+[Sun Aug 10 21:54:06.990 2008] [ 6590] accepting connections
+[Sun Aug 10 21:55:43.727 2008] [ 6590] rotating indices (seamless=1)
+[Sun Aug 10 21:55:44.730 2008] [ 6590] rotating index 'book_delta': success
+[Sun Aug 10 21:55:44.730 2008] [ 6590] rotating finished
+[Sun Aug 10 21:59:56.349 2008] [ 6590] rotating indices (seamless=1)
+[Sun Aug 10 21:59:57.349 2008] [ 6590] rotating index 'book_delta': success
+[Sun Aug 10 21:59:57.352 2008] [ 6590] rotating index 'book_core': success
+[Sun Aug 10 21:59:57.352 2008] [ 6590] rotating finished

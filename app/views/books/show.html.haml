@@ -20,6 +20,10 @@
   %b Isbn:
   =h @book.isbn
 
+%p
+  %b Image:
+  =image_tag @book.image_url
+
 
 = link_to 'Edit', edit_book_path(@book)
 %br/

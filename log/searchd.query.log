@@ -18,3 +18,17 @@
 [Sun Aug 10 19:25:21.548 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] test
 [Sun Aug 10 19:30:35.207 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
 [Sun Aug 10 19:30:40.419 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
+[Sun Aug 10 20:04:49.521 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] test
+[Sun Aug 10 20:05:08.128 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] test
+[Sun Aug 10 20:05:11.042 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] test
+[Sun Aug 10 20:05:18.979 2008] 0.000 sec [all/2/rel 24 (0,20)] [*] tom
+[Sun Aug 10 20:05:50.160 2008] 0.000 sec [all/2/rel 24 (0,20)] [*] tom
+[Sun Aug 10 20:12:26.011 2008] 0.000 sec [all/2/rel 24 (0,20)] [*] tom
+[Sun Aug 10 21:03:11.378 2008] 0.000 sec [all/2/rel 24 (0,20)] [*] tom
+[Sun Aug 10 21:03:15.249 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] rails
+[Sun Aug 10 21:45:48.763 2008] 0.000 sec [all/2/rel 25 (0,20)] [*] ruby
+[Sun Aug 10 21:45:54.048 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] rails
+[Sun Aug 10 21:46:10.281 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] railsspace
+[Sun Aug 10 21:46:25.921 2008] 0.000 sec [all/2/rel 3 (0,20)] [*] railsspace
+[Sun Aug 10 21:55:43.686 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Sun Aug 10 21:56:13.693 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby

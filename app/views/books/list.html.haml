@@ -1,12 +1,6 @@
 %h1 Listing books
 
 %table
-  %tr
-    %th Title
-    %th Author
-    %th Seller
-    %th Price
-    %th Comments
-    %th Isbn
-
   = render :partial => @books
+
+= will_paginate @books
