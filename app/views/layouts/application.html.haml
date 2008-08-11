@@ -1,0 +1,18 @@
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :"xml:lang" => "en",  :lang => "en" }
+  %head
+    %meta{ :name => "author", :content => "Chromium 53" }
+    %link{ :rel => "shortcut icon", :type => "image/ico", :href => "/favicon.ico" }
+    %link{ :rel => "stylesheet", :href => "/stylesheets/yui.css",   :type => "text/css", :media =>"all" }
+    %link{ :rel => "stylesheet", :href => "/stylesheets/style.css", :type => "text/css", :media =>"screen" }
+    %script{ :type => "text/javascript", :src => "/javascripts/jquery.js" }
+    %title UMES Textbook Exchange
+  %body
+    #doc
+      #hd
+      #bd
+        .yui-t1
+          .yui-main
+            .yui-b= render :partial => 'shared/sidebar'
+          .yui-b= yield
+      #ft
