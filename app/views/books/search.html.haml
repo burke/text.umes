@@ -1,0 +1,7 @@
+%h1 Search Books
+
+- form_tag :action => 'list' do |f|
+  %p
+    = text_field_tag :query
+  %p
+    = submit_tag "Search"

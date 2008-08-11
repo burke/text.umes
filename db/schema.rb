@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20080803015923) do
     t.string   "title"
     t.string   "author"
     t.string   "seller"
-    t.decimal  "price"
+    t.integer  "price",      :limit => 10, :precision => 10, :scale => 0
     t.text     "comments"
     t.string   "isbn"
     t.datetime "created_at"

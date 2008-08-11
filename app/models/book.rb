@@ -1,5 +1,11 @@
 class Book < ActiveRecord::Base
 
+  define_index do
+    indexes title,  :sortable => true
+    indexes author, :sortable => true
+    indexes isbn
+  end
+  
   # Make sure the seller is present and is a valid umnetid.
   validates_presence_of :seller
   validates_format_of   :seller,

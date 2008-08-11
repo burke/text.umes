@@ -1,0 +1,5 @@
+[Sun Aug 10 18:49:18.409 2008] [ 5392] creating server socket on 127.0.0.1:3312
+[Sun Aug 10 18:49:18.409 2008] [ 5392] accepting connections
+[Sun Aug 10 18:53:52.121 2008] [ 5392] rotating indices (seamless=1)
+[Sun Aug 10 18:53:53.123 2008] [ 5392] rotating index 'book_core': success
+[Sun Aug 10 18:53:53.123 2008] [ 5392] rotating finished

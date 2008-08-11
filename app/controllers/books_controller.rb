@@ -1,15 +1,31 @@
 class BooksController < ApplicationController
-  # GET /books
-  # GET /books.xml
+
+  # GET /books/search
+  # GET /books/search.xml
+  def search
+  end
+
   def index
-    @books = Book.find(:all)
+    search
+    render :template => 'books/search'
+  end
+  
+  # GET /books/list
+  # GET /books/list.xml
+  def list
+    if params[:query]
+      @searched = true
+      @books = Book.search(params[:query])
+    else
+      @books = Book.find :all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @books }
     end
   end
-
+  
   # GET /books/1
   # GET /books/1.xml
   def show
@@ -21,6 +37,7 @@ class BooksController < ApplicationController
     end
   end
 
+  
   # GET /books/new
   # GET /books/new.xml
   def new

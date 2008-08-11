@@ -1,0 +1,20 @@
+[Sun Aug 10 18:50:24.515 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] fulton
+[Sun Aug 10 18:50:27.944 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] Fulton
+[Sun Aug 10 18:50:33.744 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] Hal Fulton
+[Sun Aug 10 18:50:37.529 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] Ruby
+[Sun Aug 10 18:50:47.761 2008] 0.000 sec [scan/2/rel 0 (0,20)] [*] 
+[Sun Aug 10 18:53:41.069 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] fulton
+[Sun Aug 10 18:54:05.419 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] fulton
+[Sun Aug 10 18:54:10.774 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] rails
+[Sun Aug 10 19:01:22.066 2008] 0.000 sec [scan/2/rel 3 (0,20)] [*] 
+[Sun Aug 10 19:01:50.380 2008] 0.000 sec [scan/2/rel 3 (0,20)] [*] 
+[Sun Aug 10 19:01:55.195 2008] 0.000 sec [scan/2/rel 3 (0,20)] [*] 
+[Sun Aug 10 19:02:11.015 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
+[Sun Aug 10 19:02:40.985 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] asdf
+[Sun Aug 10 19:04:31.612 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] asdf
+[Sun Aug 10 19:16:37.203 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
+[Sun Aug 10 19:25:08.017 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
+[Sun Aug 10 19:25:17.199 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] rails
+[Sun Aug 10 19:25:21.548 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] test
+[Sun Aug 10 19:30:35.207 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
+[Sun Aug 10 19:30:40.419 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
