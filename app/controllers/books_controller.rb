@@ -5,19 +5,14 @@ class BooksController < ApplicationController
   def search
   end
 
-  def index
-    search
-    render :template => 'books/search'
-  end
-  
   # GET /books/list
   # GET /books/list.xml
   def list
     if params[:query]
       @searched = true
-      @books = Book.search(params[:query])
+      @books = Book.active.search(params[:query])
     else
-      @books = Book.paginate :page => params[:page]
+      @books = Book.active_reverse.paginate :page => params[:page]
     end
 
     respond_to do |format|
@@ -25,11 +20,16 @@ class BooksController < ApplicationController
       format.xml  { render :xml => @books }
     end
   end
+
+  def index
+    redirect_to :action => 'list'
+  end
+  
   
   # GET /books/1
   # GET /books/1.xml
   def show
-    @book = Book.find(params[:id])
+    @book = Book.active.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -49,54 +49,61 @@ class BooksController < ApplicationController
     end
   end
 
-  # GET /books/1/edit
-  def edit
-    @book = Book.find(params[:id])
-  end
-
   # POST /books
-  # POST /books.xml
   def create
     @book = Book.new(params[:book])
-
-    respond_to do |format|
-      if @book.save
-        flash[:notice] = 'Book was successfully created.'
-        format.html { redirect_to(@book) }
-        format.xml  { render :xml => @book, :status => :created, :location => @book }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @book.errors, :status => :unprocessable_entity }
-      end
+    @book.salt = rand.to_s[2..15]
+    
+    if @book.save
+      Notifier.deliver_book_confirmation(@book)
+      flash[:notice] = 'Book was successfully created. Check your email for the confirmation code.'
+      redirect_to '/books/list'
+    else
+      render :action => "new"
     end
   end
 
-  # PUT /books/1
-  # PUT /books/1.xml
-  def update
+
+  def confirm
     @book = Book.find(params[:id])
+    key = params[:k]
 
-    respond_to do |format|
-      if @book.update_attributes(params[:book])
-        flash[:notice] = 'Book was successfully updated.'
-        format.html { redirect_to(@book) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @book.errors, :status => :unprocessable_entity }
-      end
+    if key == @book.confirmation_code
+      @book.update_attributes!({:confirmed => true})
+      flash[:notice] = "Your book has been confirmed!"
+      redirect_to @book
+    else
+      flash[:errors] = "You supplied an invalid confirmation code. Maybe you copied and pasted wrong?"
+      redirect_to '/books/list'
     end
   end
 
-  # DELETE /books/1
-  # DELETE /books/1.xml
-  def destroy
+  def remove
     @book = Book.find(params[:id])
-    @book.destroy
+    key = params[:k]
 
-    respond_to do |format|
-      format.html { redirect_to(books_url) }
-      format.xml  { head :ok }
+    if key == @book.removal_code
+      @book.update_attributes!({:disabled => true})
+      flash[:notice] = "Your book has been removed!"
+      redirect_to '/books/list'
+    else
+      flash[:errors] = "You supplied an invalid removal code. Maybe you copied and pasted wrong?"
+      redirect_to '/books/list'
     end
   end
+
+
+  def contact
+
+    @book = Book.find(params[:id])
+    if params[:buyer] !~ /^um[a-z0-9]{2,8}/
+      flash[:errors] = "You must specify a valid UMNetID."
+      redirect_to @book
+    else
+      Notifier.deliver_message(@book,params[:message],params[:buyer])
+      flash[:notice] = 'Message was sent to seller. Now you play the waiting game.'
+      redirect_to '/books/list'
+    end
+  end
+
 end

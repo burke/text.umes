@@ -32,3 +32,67 @@
 [Sun Aug 10 21:46:25.921 2008] 0.000 sec [all/2/rel 3 (0,20)] [*] railsspace
 [Sun Aug 10 21:55:43.686 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
 [Sun Aug 10 21:56:13.693 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] ruby
+[Mon Aug 18 01:37:16.248 2008] 0.009 sec [all/2/rel 0 (0,20)] [*] test
+[Mon Aug 18 01:52:47.194 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] blar
+[Tue Aug 19 21:06:14.970 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] book
+[Sun Aug 24 20:09:08.798 2008] 0.021 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 18:57:26.887 2008] 0.050 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 19:03:57.618 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 19:24:58.085 2008] 0.081 sec [all/2/rel 0 (0,20)] [*] This is my search box.
+[Mon Aug 25 19:48:16.818 2008] 0.015 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 19:50:26.330 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 19:50:38.480 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 19:50:44.280 2008] 0.020 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 19:50:52.471 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 19:51:03.343 2008] 0.007 sec [all/2/rel 0 (0,20)] [*] asdfasdf\
+[Mon Aug 25 19:51:05.966 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] asdfasdf\
+[Mon Aug 25 19:51:13.556 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 19:51:16.733 2008] 0.012 sec [all/2/rel 1 (0,20)] [*] strange
+[Mon Aug 25 19:51:18.973 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] i
+[Mon Aug 25 19:51:24.965 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] doug
+[Mon Aug 25 19:51:27.596 2008] 0.015 sec [all/2/rel 1 (0,20)] [*] douglas
+[Mon Aug 25 20:05:29.244 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 20:17:19.179 2008] 0.000 sec [scan/2/rel 1 (0,20)] [book_core] 
+[Mon Aug 25 20:36:27.013 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 20:38:33.969 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 20:40:09.318 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 20:40:44.242 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 20:44:52.362 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 20:45:10.108 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 20:45:46.277 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 21:33:01.751 2008] 0.000 sec [scan/2/rel 1 (0,20)] [book_core] 
+[Mon Aug 25 21:33:15.435 2008] 0.001 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Mon Aug 25 21:34:10.815 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 21:34:22.530 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 21:42:31.857 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 21:43:00.216 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 21:54:05.238 2008] 0.000 sec [all/2/rel 2 (0,20)] [*] vhdl
+[Mon Aug 25 21:54:13.537 2008] 0.000 sec [all/2/rel 2 (0,20)] [*] vhdl
+[Mon Aug 25 21:55:12.756 2008] 0.001 sec [all/2/rel 2 (0,20)] [*] vhdl
+[Mon Aug 25 21:55:16.276 2008] 0.000 sec [all/2/rel 2 (0,20)] [*] vhdl
+[Mon Aug 25 21:55:22.974 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] reason
+[Mon Aug 25 21:55:27.551 2008] 0.000 sec [all/2/rel 2 (0,20)] [*] VHDL
+[Mon Aug 25 21:55:33.130 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] strange
+[Mon Aug 25 21:55:37.780 2008] 0.000 sec [all/2/rel 2 (0,20)] [*] of
+[Mon Aug 25 21:55:42.310 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] and
+[Mon Aug 25 21:55:46.942 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] railsspace
+[Mon Aug 25 21:58:51.432 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 21:59:06.090 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:08:58.945 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:10:20.173 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:10:28.741 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] railsspace
+[Mon Aug 25 22:10:31.513 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] hartl
+[Mon Aug 25 22:10:35.410 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] hartl
+[Mon Aug 25 22:12:30.660 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:13:16.335 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:13:24.387 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:13:25.405 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:14:23.236 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:14:31.848 2008] 0.000 sec [scan/2/rel 0 (0,20)] [book_core] 
+[Mon Aug 25 22:20:05.738 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] s
+[Mon Aug 25 22:24:28.142 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] vhdl
+[Tue Aug 26 16:43:07.967 2008] 0.032 sec [all/2/rel 0 (0,20)] [*] INTRODUCTION TO STATICS
+[Tue Aug 26 16:43:11.059 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] frye
+[Tue Aug 26 16:43:14.528 2008] 0.000 sec [all/2/rel 0 (0,20)] [*] yookoso
+[Tue Aug 26 16:43:44.841 2008] 0.023 sec [all/2/rel 1 (0,20)] [*] FUNDAMENTALS OF LOGIC
+[Tue Aug 26 16:55:58.090 2008] 0.000 sec [all/2/rel 1 (0,20)] [*] vhdl

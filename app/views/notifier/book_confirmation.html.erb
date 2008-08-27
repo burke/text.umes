@@ -1,0 +1,18 @@
+Hey <%= @book.seller %>,
+
+Your listing on text.umes.mb.ca (<%= @book.title %>) is almost ready. We just need to you confirm your email address by clicking on the link below.
+
+== CONFIRMATION LINK
+<%= @book.confirmation_link %>
+== CONFIRMATION LINK
+
+Your book will remain on the system for two months or until you click the removal link below, whichever comes first.
+
+== REMOVAL LINK
+<%= @book.removal_link %>
+== REMOVAL LINK
+
+Thanks!
+
+UMES Email Robot
+

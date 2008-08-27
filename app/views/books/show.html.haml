@@ -1,30 +1,31 @@
 %h1=h @book.title
+%hr/
 
-%p
-  %b Author:
-  =h @book.author
+%table{:style => 'width:100%;'}
+  %tr
+    %td.a
+      %span.title=h @book.title
+      %span.isbn== (#{h @book.isbn})
+      %br/
+      %span.author=h @book.author
+    %td.b
+      %span.price= number_to_currency @book.price
+      %br/
+      %span.seller=h @book.seller
+    %td.c= image_tag @book.thumbnail_url
 
-%p
-  %b Seller:
-  =h @book.seller
+%div.comments
+  %p
+    %strong Seller's Comments:
+  %p=h @book.comments
 
-%p
-  %b Price:
-  = number_to_currency @book.price
-
-%p
-  %b Comments:
-  =h @book.comments
-
-%p
-  %b Isbn:
-  =h @book.isbn
-
-%p
-  %b Image:
-  =image_tag @book.image_url
+- form_tag :action => 'contact', :id => @book.id do |f|
+  %span.message
+    = text_area_tag :message, "I'd like to buy this book. I'm available at ______ tomorrow and can meet you ____. Does this work?"
+    %label{ :for => 'buyer' } Your UMNetID (eg. umsample42)
+    <input id="buyer" name="buyer" type="text" class="fancy" />
+    %p
+      %br/
+      = submit_tag "Contact Seller"
 
 
-= link_to 'Edit', edit_book_path(@book)
-%br/
-= link_to 'Back', books_path

@@ -1,0 +1,18 @@
+Hey <%= @book.seller %>,
+
+<%= @buyer %> just left you a message about your book "<%= @book.title %>" on the UMES Textbook Exchange. Here's what they wrote:
+
+======================================================================
+<%= @message %>
+======================================================================
+
+Once you've sold the book, make sure you remove it from the listings so you quit getting emails about it. To do that, click the link below:
+
+<%= @book.removal_link %>
+
+You should probably reply to <%= @buyer %>@cc.umanitoba.ca now, but make sure you don't include the removal link in your reply!
+
+Thanks!
+
+UMES Email Robot
+

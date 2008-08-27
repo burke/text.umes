@@ -1,33 +1,34 @@
-%h1 New book
-
+%h1 Sell a Book
+%hr/
 - form_for(@book) do |f|
   = f.error_messages
 
-  %p
-    = f.label :title
-    %br/
-    = f.text_field :title
-  %p
-    = f.label :author
-    %br/
-    = f.text_field :author
-  %p
-    = f.label :seller
-    %br/
-    = f.text_field :seller
-  %p
-    = f.label :price
-    %br/
-    = f.text_field :price
-  %p
-    = f.label :comments
-    %br/
-    = f.text_area :comments
-  %p
-    = f.label :isbn
-    %br/
-    = f.text_field :isbn
-  %p
-    = f.submit "Create"
-
-= link_to 'Back', books_path
+  .yui-g
+    .yui-u.first
+      %p
+        = f.label :title, "Title"
+        %br/
+        = f.text_field :title, :class => 'fancy'
+      %p
+        = f.label :author, "Author"
+        %br/
+        = f.text_field :author, :class => 'fancy'
+      %p
+        = f.label :seller, "Your UMNetID (eg. umsample42)"
+        %br/
+        = f.text_field :seller, :class => 'fancy'
+      %p
+        = f.label :price, "Price"
+        %br/
+        = f.text_field :price, :class => 'fancy'
+      %p
+        = f.label :isbn, "ISBN-10"
+        %br/
+        = f.text_field :isbn, :class => 'fancy'
+      %p.center
+        = f.submit "Create"
+    .yui-u
+      %p
+        = f.label :comments, "Comments"
+        %br/
+        = f.text_area :comments, :class => 'fancy'

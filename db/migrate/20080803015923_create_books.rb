@@ -8,7 +8,9 @@ class CreateBooks < ActiveRecord::Migration
       t.text :comments
       t.string :isbn
       t.boolean :delta
-      
+      t.boolean :confirmed
+      t.boolean :disabled
+      t.string :salt
       t.timestamps
     end
   end

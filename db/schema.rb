@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(:version => 20080803015923) do
     t.text     "comments"
     t.string   "isbn"
     t.boolean  "delta"
+    t.boolean  "confirmed"
+    t.boolean  "disabled"
+    t.string   "salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

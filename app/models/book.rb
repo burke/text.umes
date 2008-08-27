@@ -1,4 +1,3 @@
-require 'net/http'
 class Book < ActiveRecord::Base
 
   cattr_reader :per_page
@@ -10,7 +9,9 @@ class Book < ActiveRecord::Base
     indexes author, :sortable => true
     indexes isbn
   end
-  
+
+  validates_presence_of :title, :author
+
   # Make sure the seller is present and is a valid umnetid.
   validates_presence_of :seller
   validates_format_of   :seller,
@@ -19,10 +20,16 @@ class Book < ActiveRecord::Base
 
   validates_presence_of :price
   validates_numericality_of :price
-
+  
   validates_format_of :isbn,
     :with => /^[0-9]-?[0-9]{3}-?[0-9]{5}-?[0-9]$/,
     :message => "must be a valid ISBN-10"
+
+  def validate
+    if price <= 0
+      errors.add(:price, "must be positive.")
+      end
+  end
   
   def isbn=(_isbn)
     write_attribute(:isbn, format_isbn(_isbn))
@@ -41,6 +48,22 @@ class Book < ActiveRecord::Base
         file.write(resp.body)
       end
     end
+  end
+
+  def confirmation_link
+    "http://text.umes.mb.ca/books/confirm/#{id}?k=#{confirmation_code}"
+  end
+
+  def removal_link
+    "http://text.umes.mb.ca/books/remove/#{id}?k=#{removal_code}"
+  end
+
+  def confirmation_code
+    Digest::SHA1.hexdigest("#{title}#{isbn}#{seller}#{salt}")
+  end
+
+  def removal_code
+    Digest::SHA1.hexdigest("#{title}disable#{isbn}#{seller}#{salt}")
   end
 
   def thumbnail_url
@@ -65,5 +88,13 @@ class Book < ActiveRecord::Base
       return _isbn
     end
   end
-  
+
+  named_scope :active_reverse,
+    :conditions => { :confirmed => true, :disabled => nil },
+    :order => 'ID DESC'
+
+  named_scope :active,
+    :conditions => { :confirmed => true, :disabled => nil }
+
+
 end

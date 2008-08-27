@@ -1,4 +1,0 @@
-#!/bin/bash
-cd /srv/rails/newtext.umes.mb.ca
-rake ts:in
-

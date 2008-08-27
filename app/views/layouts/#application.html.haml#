@@ -1,0 +1,33 @@
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :"xml:lang" => "en",  :lang => "en" }
+  %head
+    %meta{ :name => "author", :content => "Chromium 53" }
+    %link{ :rel => "shortcut icon", :type => "image/ico", :href => "/favicon.ico" }
+    %link{ :rel => "stylesheet", :href => "http://yui.yahooapis.com/2.5.2/build/reset-fonts-grids/reset-fonts-grids.css", :type => "text/css", :media => "all" }
+    %link{ :rel => "stylesheet", :href => "/stylesheets/style.css", :type => "text/css", :media => "screen" }
+    %script{ :type => "text/javascript", :src => "/javascripts/jquery.js" }
+    %script{ :type => "text/javascript", :src => "/javascripts/site.js" }
+    %title UMES Textbook Exchange
+  %body
+    #doc
+      #hd
+        %h1= link_to 'UMES Textbook Exchange', '/'
+        - form_tag :action => 'list' do |f|
+          %span.search
+            = text_field_tag :query
+
+      .yui-t1
+        #nav.yui-b
+          = render :partial => 'shared/sidebar'
+        #yui-main
+          #bd.yui-b
+            -if flash[:notice]
+              .notice= flash[:notice]
+            -if flash[:errors]
+              .errors= flash[:errors]
+            = yield
+      #ft
+        %p 
+          Copyright 2008 University of Manitoba Engineering Society
+          %br/
+          = link_to image_tag('http://53cr.com/logo/chromium53-whitebg-75.png', :title => 'Designed and Built by Chromium 53'), 'http://53cr.com'

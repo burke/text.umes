@@ -1,6 +1,7 @@
-%h1 Listing books
+%h1= params[:query] ? "Search Results for &ldquo;#{h(params[:query])}&rdquo;" : "Available Books"
+%hr/
 
-%table
-  = render :partial => @books
+%table{:style=>'width:100%'}
+  = render :partial => @books rescue nil
 
 = will_paginate @books

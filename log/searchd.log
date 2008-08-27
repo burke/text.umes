@@ -24,3 +24,162 @@
 [Sun Aug 10 21:59:57.349 2008] [ 6590] rotating index 'book_delta': success
 [Sun Aug 10 21:59:57.352 2008] [ 6590] rotating index 'book_core': success
 [Sun Aug 10 21:59:57.352 2008] [ 6590] rotating finished
+[Mon Aug 11 03:30:06.518 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 11 03:30:07.520 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 11 03:30:07.523 2008] [ 6590] rotating index 'book_core': success
+[Mon Aug 11 03:30:07.523 2008] [ 6590] rotating finished
+[Tue Aug 12 03:30:07.716 2008] [ 6590] rotating indices (seamless=1)
+[Tue Aug 12 03:30:07.719 2008] [ 6590] rotating index 'book_delta': success
+[Tue Aug 12 03:30:07.721 2008] [ 6590] rotating index 'book_core': success
+[Tue Aug 12 03:30:07.722 2008] [ 6590] rotating finished
+[Tue Aug 12 22:53:35.547 2008] [ 6590] rotating indices (seamless=1)
+[Tue Aug 12 22:53:35.730 2008] [ 6590] rotating index 'book_delta': success
+[Tue Aug 12 22:53:35.732 2008] [ 6590] rotating index 'book_core': success
+[Tue Aug 12 22:53:35.732 2008] [ 6590] rotating finished
+[Wed Aug 13 00:02:06.512 2008] [ 6590] rotating indices (seamless=1)
+[Wed Aug 13 00:02:07.514 2008] [ 6590] rotating index 'book_delta': success
+[Wed Aug 13 00:02:07.517 2008] [ 6590] rotating index 'book_core': success
+[Wed Aug 13 00:02:07.517 2008] [ 6590] rotating finished
+[Thu Aug 14 00:02:10.012 2008] [ 6590] rotating indices (seamless=1)
+[Thu Aug 14 00:02:11.028 2008] [ 6590] rotating index 'book_delta': success
+[Thu Aug 14 00:02:11.031 2008] [ 6590] rotating index 'book_core': success
+[Thu Aug 14 00:02:11.031 2008] [ 6590] rotating finished
+[Fri Aug 15 00:02:06.413 2008] [ 6590] rotating indices (seamless=1)
+[Fri Aug 15 00:02:07.432 2008] [ 6590] rotating index 'book_delta': success
+[Fri Aug 15 00:02:07.434 2008] [ 6590] rotating index 'book_core': success
+[Fri Aug 15 00:02:07.434 2008] [ 6590] rotating finished
+[Sat Aug 16 00:02:07.067 2008] [ 6590] rotating indices (seamless=1)
+[Sat Aug 16 00:02:07.080 2008] [ 6590] rotating index 'book_delta': success
+[Sat Aug 16 00:02:07.083 2008] [ 6590] rotating index 'book_core': success
+[Sat Aug 16 00:02:07.083 2008] [ 6590] rotating finished
+[Sun Aug 17 00:02:10.809 2008] [ 6590] rotating indices (seamless=1)
+[Sun Aug 17 00:02:11.140 2008] [ 6590] rotating index 'book_delta': success
+[Sun Aug 17 00:02:11.143 2008] [ 6590] rotating index 'book_core': success
+[Sun Aug 17 00:02:11.143 2008] [ 6590] rotating finished
+[Mon Aug 18 00:02:04.949 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 18 00:02:05.954 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 18 00:02:05.956 2008] [ 6590] rotating index 'book_core': success
+[Mon Aug 18 00:02:05.956 2008] [ 6590] rotating finished
+[Tue Aug 19 00:02:07.765 2008] [ 6590] rotating indices (seamless=1)
+[Tue Aug 19 00:02:08.787 2008] [ 6590] rotating index 'book_delta': success
+[Tue Aug 19 00:02:08.789 2008] [ 6590] rotating index 'book_core': success
+[Tue Aug 19 00:02:08.790 2008] [ 6590] rotating finished
+[Wed Aug 20 00:02:07.830 2008] [ 6590] rotating indices (seamless=1)
+[Wed Aug 20 00:02:07.854 2008] [ 6590] rotating index 'book_delta': success
+[Wed Aug 20 00:02:07.856 2008] [ 6590] rotating index 'book_core': success
+[Wed Aug 20 00:02:07.856 2008] [ 6590] rotating finished
+[Thu Aug 21 00:02:05.583 2008] [ 6590] rotating indices (seamless=1)
+[Thu Aug 21 00:02:06.586 2008] [ 6590] rotating index 'book_delta': success
+[Thu Aug 21 00:02:06.588 2008] [ 6590] rotating index 'book_core': success
+[Thu Aug 21 00:02:06.588 2008] [ 6590] rotating finished
+[Fri Aug 22 00:02:11.505 2008] [ 6590] rotating indices (seamless=1)
+[Fri Aug 22 00:02:12.526 2008] [ 6590] rotating index 'book_delta': success
+[Fri Aug 22 00:02:12.554 2008] [ 6590] rotating index 'book_core': success
+[Fri Aug 22 00:02:12.554 2008] [ 6590] rotating finished
+[Sat Aug 23 00:02:07.805 2008] [ 6590] rotating indices (seamless=1)
+[Sat Aug 23 00:02:08.827 2008] [ 6590] rotating index 'book_delta': success
+[Sat Aug 23 00:02:08.830 2008] [ 6590] rotating index 'book_core': success
+[Sat Aug 23 00:02:08.830 2008] [ 6590] rotating finished
+[Sun Aug 24 00:02:09.190 2008] [ 6590] rotating indices (seamless=1)
+[Sun Aug 24 00:02:10.191 2008] [ 6590] rotating index 'book_delta': success
+[Sun Aug 24 00:02:10.194 2008] [ 6590] rotating index 'book_core': success
+[Sun Aug 24 00:02:10.194 2008] [ 6590] rotating finished
+[Sun Aug 24 20:09:08.948 2008] [ 6590] rotating indices (seamless=1)
+[Sun Aug 24 20:09:09.961 2008] [ 6590] rotating index 'book_delta': success
+[Sun Aug 24 20:09:09.961 2008] [ 6590] rotating finished
+[Mon Aug 25 00:02:08.922 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 00:02:08.926 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 00:02:08.929 2008] [ 6590] rotating index 'book_core': success
+[Mon Aug 25 00:02:08.929 2008] [ 6590] rotating finished
+[Mon Aug 25 18:57:27.200 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 18:57:27.214 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 18:57:27.214 2008] [ 6590] rotating finished
+[Mon Aug 25 19:03:57.700 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 19:03:58.701 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 19:03:58.701 2008] [ 6590] rotating finished
+[Mon Aug 25 20:05:29.331 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:05:30.382 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:05:30.382 2008] [ 6590] rotating finished
+[Mon Aug 25 20:17:19.218 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:17:20.221 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:17:20.221 2008] [ 6590] rotating finished
+[Mon Aug 25 20:36:27.069 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:36:28.070 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:36:28.070 2008] [ 6590] rotating finished
+[Mon Aug 25 20:38:34.071 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:38:35.073 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:38:35.073 2008] [ 6590] rotating finished
+[Mon Aug 25 20:40:09.372 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:40:10.412 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:40:10.412 2008] [ 6590] rotating finished
+[Mon Aug 25 20:40:44.287 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:40:45.289 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:40:45.290 2008] [ 6590] rotating finished
+[Mon Aug 25 20:44:52.414 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:44:53.417 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:44:53.417 2008] [ 6590] rotating finished
+[Mon Aug 25 20:45:10.667 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:45:11.672 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:45:11.672 2008] [ 6590] rotating finished
+[Mon Aug 25 20:45:40.273 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 20:45:41.274 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 20:45:41.277 2008] [ 6590] rotating index 'book_core': success
+[Mon Aug 25 20:45:41.277 2008] [ 6590] rotating finished
+[Mon Aug 25 21:33:01.791 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 21:33:02.794 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 21:33:02.795 2008] [ 6590] rotating finished
+[Mon Aug 25 21:34:10.917 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 21:34:11.916 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 21:34:11.916 2008] [ 6590] rotating finished
+[Mon Aug 25 21:34:22.596 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 21:34:23.597 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 21:34:23.597 2008] [ 6590] rotating finished
+[Mon Aug 25 21:42:31.933 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 21:42:32.935 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 21:42:32.936 2008] [ 6590] rotating finished
+[Mon Aug 25 21:43:00.290 2008] [ 6590] rotating indices (seamless=1)
+[Mon Aug 25 21:43:01.293 2008] [ 6590] rotating index 'book_delta': success
+[Mon Aug 25 21:43:01.293 2008] [ 6590] rotating finished
+[Mon Aug 25 21:53:26.556 2008] [ 6590] caught SIGTERM, shutting down
+[Mon Aug 25 21:53:26.556 2008] [ 6590] WARNING: index book_core: attrs save failed: failed to open /srv/rails/newtext.umes.mb.ca/db/sphinx/development/book_core.spa.tmpnew: No such file or directory
+[Mon Aug 25 21:53:26.556 2008] [ 6590] shutdown complete
+[Mon Aug 25 21:53:40.654 2008] [21570] creating server socket on 127.0.0.1:3312
+[Mon Aug 25 21:53:40.654 2008] [21570] accepting connections
+[Mon Aug 25 21:53:58.006 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 21:53:59.007 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 21:53:59.010 2008] [21570] rotating index 'book_core': success
+[Mon Aug 25 21:53:59.010 2008] [21570] rotating finished
+[Mon Aug 25 21:58:51.471 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 21:58:52.479 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 21:58:52.479 2008] [21570] rotating finished
+[Mon Aug 25 21:59:06.126 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 21:59:07.126 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 21:59:07.126 2008] [21570] rotating finished
+[Mon Aug 25 22:08:22.889 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:08:23.890 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:08:23.893 2008] [21570] rotating index 'book_core': success
+[Mon Aug 25 22:08:23.893 2008] [21570] rotating finished
+[Mon Aug 25 22:08:59.015 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:09:00.016 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:09:00.016 2008] [21570] rotating finished
+[Mon Aug 25 22:10:20.215 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:10:21.217 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:10:21.217 2008] [21570] rotating finished
+[Mon Aug 25 22:12:30.760 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:12:31.761 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:12:31.761 2008] [21570] rotating finished
+[Mon Aug 25 22:13:16.379 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:13:17.382 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:13:17.382 2008] [21570] rotating finished
+[Mon Aug 25 22:13:24.499 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:13:25.405 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:13:25.405 2008] [21570] rotating finished
+[Mon Aug 25 22:13:25.466 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:13:26.466 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:13:26.467 2008] [21570] rotating finished
+[Mon Aug 25 22:14:23.298 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:14:24.296 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:14:24.296 2008] [21570] rotating finished
+[Mon Aug 25 22:14:31.885 2008] [21570] rotating indices (seamless=1)
+[Mon Aug 25 22:14:32.888 2008] [21570] rotating index 'book_delta': success
+[Mon Aug 25 22:14:32.888 2008] [21570] rotating finished

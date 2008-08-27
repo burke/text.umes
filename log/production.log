@@ -736,3 +736,2697 @@ SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
   Parameters: {"action"=>"index", "controller"=>"books"}
 Rendering books/index
 Completed in 0.00166 (600 reqs/sec) | Rendering: 0.00082 (49%) | DB: 0.00030 (17%) | 200 OK [http://text.burkelibbey.org/]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-25 21:49:42) [GET]
+  Session ID: 5afbc0576f7ceeff4ad72c415d532326
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00508 (196 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:49:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: books.disabled: SELECT * FROM "books"     WHERE ("books"."confirmed" = 't' AND "books"."disabled" IS NULL)  ORDER BY ID DESC LIMIT 20 OFFSET 0):
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:360:in `catch_schema_changes'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:263:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:80:in `cache_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:582:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1341:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:536:in `find'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:82:in `send'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:82:in `paginate'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/collection.rb:87:in `create'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:76:in `paginate'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:153:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:153:in `method_missing'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1852:in `with_scope'
+    (__DELEGATION__):2:in `__send__'
+    (__DELEGATION__):2:in `with_scope'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:152:in `method_missing'
+    /app/controllers/books_controller.rb:15:in `list'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:50:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: books.disabled: SELECT * FROM "books"     WHERE ("books"."confirmed" = 't' AND "books"."disabled" IS NULL)  ORDER BY ID DESC LIMIT 20 OFFSET 0):
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:360:in `catch_schema_changes'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:263:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:80:in `cache_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:582:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1341:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:536:in `find'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:82:in `send'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:82:in `paginate'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/collection.rb:87:in `create'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:76:in `paginate'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:153:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:153:in `method_missing'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1852:in `with_scope'
+    (__DELEGATION__):2:in `__send__'
+    (__DELEGATION__):2:in `with_scope'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:152:in `method_missing'
+    /app/controllers/books_controller.rb:15:in `list'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:50:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: books.disabled: SELECT * FROM "books"     WHERE ("books"."confirmed" = 't' AND "books"."disabled" IS NULL)  ORDER BY ID DESC LIMIT 20 OFFSET 0):
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:360:in `catch_schema_changes'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/sqlite_adapter.rb:263:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:80:in `cache_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:582:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1341:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:536:in `find'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:82:in `send'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:82:in `paginate'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/collection.rb:87:in `create'
+    /usr/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.2/lib/will_paginate/finder.rb:76:in `paginate'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:153:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:153:in `method_missing'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1852:in `with_scope'
+    (__DELEGATION__):2:in `__send__'
+    (__DELEGATION__):2:in `with_scope'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/named_scope.rb:152:in `method_missing'
+    /app/controllers/books_controller.rb:15:in `list'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:50:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.08853 (11 reqs/sec) | Rendering: 0.06398 (72%) | DB: 0.00387 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 21:50:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00797 (125 reqs/sec) | Rendering: 0.00766 (96%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:50:53) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00988 (101 reqs/sec) | Rendering: 0.00724 (73%) | DB: 0.00047 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 21:50:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01508 (66 reqs/sec) | Rendering: 0.01384 (91%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:51:03) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Sphinx Error: index book_core: failed to open /srv/rails/newtext.umes.mb.ca/db/sphinx/development/book_core.spd: No such file or directory; index book_delta: failed to open /srv/rails/newtext.umes.mb.ca/db/sphinx/development/book_delta.spd: No such file or directory
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.03451 (28 reqs/sec) | Rendering: 0.00446 (12%) | DB: 0.00058 (1%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 21:51:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00569 (175 reqs/sec) | Rendering: 0.00545 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:51:08) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01163 (85 reqs/sec) | Rendering: 0.00829 (71%) | DB: 0.00069 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 21:51:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01495 (66 reqs/sec) | Rendering: 0.01254 (83%) | DB: 0.00044 (2%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:51:45) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Sphinx Error: index book_core: failed to open /srv/rails/newtext.umes.mb.ca/db/sphinx/development/book_core.spd: No such file or directory; index book_delta: failed to open /srv/rails/newtext.umes.mb.ca/db/sphinx/development/book_delta.spd: No such file or directory
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01228 (81 reqs/sec) | Rendering: 0.00572 (46%) | DB: 0.00049 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:54:05) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Rendering template within layouts/application
+Rendering books/list
+
+
+ActionView::TemplateError (Missing template nil_classes/_nil_class.html.erb in view path /srv/rails/text.umes.mb.ca/app/views) on line #5 of books/list.html.haml:
+2: %hr/
+3: 
+4: %table{:style=>'width:100%'}
+5:   = render :partial => @books
+6: 
+7: = will_paginate @books
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:85:in `raise_missing_template_exception'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:78:in `set_extension_and_file_name'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:15:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:8:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:151:in `new'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:151:in `render_partial_collection_with_unknown_partial_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:149:in `map'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:149:in `render_partial_collection_with_unknown_partial_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:133:in `render_partial_collection'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:117:in `render_partial'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:273:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/haml/helpers/action_view_mods.rb:5:in `render'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/haml/helpers.rb:57:in `non_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/haml/helpers/action_view_mods.rb:5:in `render'
+    /srv/rails/text.umes.mb.ca/app/views/books/list.html.haml:5:in `_run_plugin_47app47views47books47list46html46haml'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    /srv/rails/text.umes.mb.ca/app/controllers/books_controller.rb:18:in `list'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-25 21:54:10) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00055 (1805 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:54:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00975 (102 reqs/sec) | Rendering: 0.00726 (74%) | DB: 0.00045 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:54:13) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Rendering template within layouts/application
+Rendering books/list
+
+
+ActionView::TemplateError (Missing template nil_classes/_nil_class.html.erb in view path /srv/rails/text.umes.mb.ca/app/views) on line #5 of books/list.html.haml:
+2: %hr/
+3: 
+4: %table{:style=>'width:100%'}
+5:   = render :partial => @books
+6: 
+7: = will_paginate @books
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:85:in `raise_missing_template_exception'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:78:in `set_extension_and_file_name'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:15:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:8:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:151:in `new'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:151:in `render_partial_collection_with_unknown_partial_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:149:in `map'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:149:in `render_partial_collection_with_unknown_partial_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:133:in `render_partial_collection'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:117:in `render_partial'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:273:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/haml/helpers/action_view_mods.rb:5:in `render'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/haml/helpers.rb:57:in `non_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/haml/helpers/action_view_mods.rb:5:in `render'
+    /srv/rails/text.umes.mb.ca/app/views/books/list.html.haml:5:in `_run_plugin_47app47views47books47list46html46haml'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    /srv/rails/text.umes.mb.ca/app/controllers/books_controller.rb:18:in `list'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:53:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.2/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/500.html (500 Internal Server Error)
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:12) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.16801 (5 reqs/sec) | Rendering: 0.01959 (11%) | DB: 0.02479 (14%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:16) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01314 (76 reqs/sec) | Rendering: 0.00523 (39%) | DB: 0.00073 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.02079 (48 reqs/sec) | Rendering: 0.01798 (86%) | DB: 0.00048 (2%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 21:55:18) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00858 (116 reqs/sec) | Rendering: 0.00829 (96%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01126 (88 reqs/sec) | Rendering: 0.00794 (70%) | DB: 0.00073 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 21:55:20) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01661 (60 reqs/sec) | Rendering: 0.01417 (85%) | DB: 0.00043 (2%) | 200 OK [http://text.umes.mb.ca/books/5]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00999 (100 reqs/sec) | Rendering: 0.00724 (72%) | DB: 0.00046 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:22) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"reason"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01349 (74 reqs/sec) | Rendering: 0.00567 (42%) | DB: 0.00078 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01108 (90 reqs/sec) | Rendering: 0.00833 (75%) | DB: 0.00045 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:27) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"VHDL"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01122 (89 reqs/sec) | Rendering: 0.00448 (39%) | DB: 0.00048 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.15073 (6 reqs/sec) | Rendering: 0.14808 (98%) | DB: 0.00045 (0%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:33) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"strange"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01107 (90 reqs/sec) | Rendering: 0.00475 (42%) | DB: 0.00040 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01186 (84 reqs/sec) | Rendering: 0.00865 (72%) | DB: 0.00060 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:37) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"of"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01214 (82 reqs/sec) | Rendering: 0.00472 (38%) | DB: 0.00060 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00892 (112 reqs/sec) | Rendering: 0.00638 (71%) | DB: 0.00045 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:42) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"and"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01103 (90 reqs/sec) | Rendering: 0.00465 (42%) | DB: 0.00039 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00853 (117 reqs/sec) | Rendering: 0.00607 (71%) | DB: 0.00043 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:46) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"railsspace"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01032 (96 reqs/sec) | Rendering: 0.00432 (41%) | DB: 0.00040 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 21:55:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01375 (72 reqs/sec) | Rendering: 0.01247 (90%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:55:48) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00869 (115 reqs/sec) | Rendering: 0.00611 (70%) | DB: 0.00045 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 21:55:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00854 (117 reqs/sec) | Rendering: 0.00576 (67%) | DB: 0.00062 (7%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 21:57:29) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00822 (121 reqs/sec) | Rendering: 0.00718 (87%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#create (for 207.161.48.128 at 2008-08-25 21:58:42) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"create", "controller"=>"books", "book"=>{"seller"=>"umlibbey", "price"=>"50", "title"=>"Introduction to Electrical and Computer Engineering", "author"=>"McGraw Hill", "isbn"=>"007083858", "comments"=>"Almost perfect condition"}}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01182 (84 reqs/sec) | Rendering: 0.00888 (75%) | DB: 0.00038 (3%) | 200 OK [http://text.umes.mb.ca/books]
+
+
+Processing BooksController#create (for 207.161.48.128 at 2008-08-25 21:58:51) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"create", "controller"=>"books", "book"=>{"seller"=>"umlibbey", "price"=>"50", "title"=>"Introduction to Electrical and Computer Engineering", "author"=>"McGraw Hill", "isbn"=>"0070838585", "comments"=>"Almost perfect condition"}}
+Sent mail to umlibbey@cc.umanitoba.ca
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.52946 (1 reqs/sec) | DB: 0.00601 (1%) | 302 Found [http://text.umes.mb.ca/books]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:58:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIk9Cb29rIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4g
+Q2hlY2sgeW91ciBlbWFpbCBmb3IgdGhlIGNvbmZpcm1hdGlvbiBjb2RlLgY6
+CkB1c2VkewY7B0Y=--50282ccd731698b9006963684ee96ff7177427ce
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.02294 (43 reqs/sec) | Rendering: 0.01852 (80%) | DB: 0.00168 (7%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#confirm (for 207.161.48.128 at 2008-08-25 21:59:06) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiT0Jvb2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LiBDaGVjayB5b3VyIGVtYWlsIGZvciB0aGUgY29uZmlybWF0aW9uIGNvZGUu
+BjoKQHVzZWR7BjsGVDoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--5a2160ee7c8e080f1320e71c2aa55073cb30f728
+  Parameters: {"k"=>"c7b1f85848faaeedc35131dc8eec26b8d3a7a2a8", "action"=>"confirm", "id"=>"6", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/6
+Completed in 0.07497 (13 reqs/sec) | DB: 0.02934 (39%) | 302 Found [http://text.umes.mb.ca/books/confirm/6?k=c7b1f85848faaeedc35131dc8eec26b8d3a7a2a8]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 21:59:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiJZb3VyIGJvb2sgaGFzIGJlZW4gY29uZmlybWVkIQY6
+CkB1c2VkewY7B0Y=--59cbe0f8c5e0619f673d5077b0ca41e07d828304
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.14590 (6 reqs/sec) | Rendering: 0.00851 (5%) | DB: 0.00938 (6%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 21:59:10) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiIllvdXIgYm9vayBoYXMgYmVlbiBjb25maXJtZWQh
+BjoKQHVzZWR7BjsGVDoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--b78ec01e84ca45f123bfd0a66748002da2447a45
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00630 (158 reqs/sec) | Rendering: 0.00603 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 21:59:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01148 (87 reqs/sec) | Rendering: 0.00831 (72%) | DB: 0.00059 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 21:59:14) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00799 (125 reqs/sec) | Rendering: 0.00514 (64%) | DB: 0.00041 (5%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:00:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.19891 (5 reqs/sec) | Rendering: 0.17471 (87%) | DB: 0.00210 (1%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:01:07) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01032 (96 reqs/sec) | Rendering: 0.00787 (76%) | DB: 0.00049 (4%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:01:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00861 (116 reqs/sec) | Rendering: 0.00611 (71%) | DB: 0.00048 (5%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:01:09) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00967 (103 reqs/sec) | Rendering: 0.00714 (73%) | DB: 0.00044 (4%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:01:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.05543 (18 reqs/sec) | Rendering: 0.03812 (68%) | DB: 0.00192 (3%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:02:03) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00826 (121 reqs/sec) | Rendering: 0.00581 (70%) | DB: 0.00042 (5%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:02:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.04847 (20 reqs/sec) | Rendering: 0.03099 (63%) | DB: 0.00242 (5%) | 200 OK [http://text.umes.mb.ca/books/6]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:02:21) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01843 (54 reqs/sec) | Rendering: 0.01505 (81%) | DB: 0.00064 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:02:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00965 (103 reqs/sec) | Rendering: 0.00680 (70%) | DB: 0.00055 (5%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:02:26) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01243 (80 reqs/sec) | Rendering: 0.00870 (69%) | DB: 0.00125 (10%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:07:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.05352 (18 reqs/sec) | Rendering: 0.03223 (60%) | DB: 0.00303 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:08:25) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00755 (132 reqs/sec) | Rendering: 0.00468 (61%) | DB: 0.00058 (7%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:08:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01745 (57 reqs/sec) | Rendering: 0.01596 (91%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#create (for 207.161.48.128 at 2008-08-25 22:08:58) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"create", "controller"=>"books", "book"=>{"seller"=>"umlibbey", "price"=>"30", "title"=>"RailsSpace", "author"=>"Hartl & Prochazka", "isbn"=>"0321480791", "comments"=>"Perfect Condition.\r\n"}}
+Sent mail to umlibbey@cc.umanitoba.ca
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.26867 (3 reqs/sec) | DB: 0.00409 (1%) | 302 Found [http://text.umes.mb.ca/books]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:08:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIk9Cb29rIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4g
+Q2hlY2sgeW91ciBlbWFpbCBmb3IgdGhlIGNvbmZpcm1hdGlvbiBjb2RlLgY6
+CkB1c2VkewY7B0Y=--50282ccd731698b9006963684ee96ff7177427ce
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00799 (125 reqs/sec) | Rendering: 0.00504 (63%) | DB: 0.00060 (7%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:10) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiT0Jvb2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LiBDaGVjayB5b3VyIGVtYWlsIGZvciB0aGUgY29uZmlybWF0aW9uIGNvZGUu
+BjoKQHVzZWR7BjsGVDoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--5a2160ee7c8e080f1320e71c2aa55073cb30f728
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.14147 (7 reqs/sec) | Rendering: 0.06360 (44%) | DB: 0.00074 (0%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:10:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.03982 (25 reqs/sec) | Rendering: 0.03567 (89%) | DB: 0.00148 (3%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#confirm (for 207.161.48.128 at 2008-08-25 22:10:20) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"k"=>"94ce466c7af273c3d7ec97189b78869587c287e0", "action"=>"confirm", "id"=>"1", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/1
+Completed in 0.05085 (19 reqs/sec) | DB: 0.00389 (7%) | 302 Found [http://text.umes.mb.ca/books/confirm/1?k=94ce466c7af273c3d7ec97189b78869587c287e0]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:10:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiJZb3VyIGJvb2sgaGFzIGJlZW4gY29uZmlybWVkIQY6
+CkB1c2VkewY7B0Y=--59cbe0f8c5e0619f673d5077b0ca41e07d828304
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.02002 (49 reqs/sec) | Rendering: 0.01521 (75%) | DB: 0.00223 (11%) | 200 OK [http://text.umes.mb.ca/books/1]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:24) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiIllvdXIgYm9vayBoYXMgYmVlbiBjb25maXJtZWQh
+BjoKQHVzZWR7BjsGVDoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--b78ec01e84ca45f123bfd0a66748002da2447a45
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01098 (91 reqs/sec) | Rendering: 0.00835 (76%) | DB: 0.00042 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:10:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01021 (97 reqs/sec) | Rendering: 0.00735 (72%) | DB: 0.00057 (5%) | 200 OK [http://text.umes.mb.ca/books/1]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:28) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"railsspace"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01162 (86 reqs/sec) | Rendering: 0.00535 (46%) | DB: 0.00042 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:31) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"hartl"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01165 (85 reqs/sec) | Rendering: 0.00503 (43%) | DB: 0.00045 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:10:32) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00810 (123 reqs/sec) | Rendering: 0.00786 (97%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:35) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"hartl"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01218 (82 reqs/sec) | Rendering: 0.00541 (44%) | DB: 0.00050 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:36) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00724 (138 reqs/sec) | Rendering: 0.00475 (65%) | DB: 0.00048 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:10:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00968 (103 reqs/sec) | Rendering: 0.00857 (88%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:10:48) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01221 (81 reqs/sec) | Rendering: 0.01108 (90%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00830 (120 reqs/sec) | Rendering: 0.00542 (65%) | DB: 0.00058 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:10:51) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00503 (198 reqs/sec) | Rendering: 0.00479 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:10:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00699 (143 reqs/sec) | Rendering: 0.00457 (65%) | DB: 0.00043 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:10:56) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00549 (182 reqs/sec) | Rendering: 0.00522 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-25 22:11:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00051 (1945 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:11:10) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00690 (144 reqs/sec) | Rendering: 0.00445 (64%) | DB: 0.00046 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:11:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00937 (106 reqs/sec) | Rendering: 0.00819 (87%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#create (for 207.161.48.128 at 2008-08-25 22:12:30) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"create", "controller"=>"books", "book"=>{"seller"=>"umlibbey", "price"=>"50", "title"=>"Introduction to Electrical and Computer Engineering", "author"=>"McGraw Hill", "isbn"=>"0070838585", "comments"=>"Near perfect condition. Used in ECE 1450 2006-07\r\n"}}
+Sent mail to umlibbey@cc.umanitoba.ca
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.47013 (2 reqs/sec) | DB: 0.00242 (0%) | 302 Found [http://text.umes.mb.ca/books]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:12:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIk9Cb29rIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4g
+Q2hlY2sgeW91ciBlbWFpbCBmb3IgdGhlIGNvbmZpcm1hdGlvbiBjb2RlLgY6
+CkB1c2VkewY7B0Y=--50282ccd731698b9006963684ee96ff7177427ce
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00749 (133 reqs/sec) | Rendering: 0.00495 (66%) | DB: 0.00050 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:12:39) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiT0Jvb2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LiBDaGVjayB5b3VyIGVtYWlsIGZvciB0aGUgY29uZmlybWF0aW9uIGNvZGUu
+BjoKQHVzZWR7BjsGVDoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--5a2160ee7c8e080f1320e71c2aa55073cb30f728
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00902 (110 reqs/sec) | Rendering: 0.00792 (87%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#create (for 207.161.48.128 at 2008-08-25 22:13:16) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"create", "controller"=>"books", "book"=>{"seller"=>"umlibbey", "price"=>"20", "title"=>"Reason and Argument", "author"=>"Richard Feldman", "isbn"=>"0136246028", "comments"=>"Perfect Condition. Used in critical thinking 2006-07"}}
+Sent mail to umlibbey@cc.umanitoba.ca
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.19664 (5 reqs/sec) | DB: 0.01794 (9%) | 302 Found [http://text.umes.mb.ca/books]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:13:16) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiT0Jvb2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LiBDaGVjayB5b3VyIGVtYWlsIGZvciB0aGUgY29uZmlybWF0aW9uIGNvZGUu
+BjoKQHVzZWR7BjsGRjoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--849e0ccb21d71606d48dfdf6f88c499a0166449e
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00789 (126 reqs/sec) | Rendering: 0.00513 (65%) | DB: 0.00057 (7%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#confirm (for 207.161.48.128 at 2008-08-25 22:13:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIk9Cb29rIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4g
+Q2hlY2sgeW91ciBlbWFpbCBmb3IgdGhlIGNvbmZpcm1hdGlvbiBjb2RlLgY6
+CkB1c2VkewY7B1Q=--98cfc9add3175102ff7622bc67b294d76a92704e
+  Parameters: {"k"=>"3b26149a7eabb095fcb8bf2fa64f196e2300ff74", "action"=>"confirm", "id"=>"3", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/3
+Completed in 0.13466 (7 reqs/sec) | DB: 0.00602 (4%) | 302 Found [http://text.umes.mb.ca/books/confirm/3?k=3b26149a7eabb095fcb8bf2fa64f196e2300ff74]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:13:24) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiIllvdXIgYm9vayBoYXMgYmVlbiBjb25maXJtZWQh
+BjoKQHVzZWR7BjsGRjoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--a462453145fe210201b4f08856cdf5aa99302b70
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00905 (110 reqs/sec) | Rendering: 0.00631 (69%) | DB: 0.00053 (5%) | 200 OK [http://text.umes.mb.ca/books/3]
+
+
+Processing BooksController#confirm (for 207.161.48.128 at 2008-08-25 22:13:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiJZb3VyIGJvb2sgaGFzIGJlZW4gY29uZmlybWVkIQY6
+CkB1c2VkewY7B1Q=--6d32fc12423497223e587d33a7431e9c43c944c5
+  Parameters: {"k"=>"7cf3fb07a2800196c49080c7d60d3f59600cb366", "action"=>"confirm", "id"=>"2", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/2
+Completed in 0.05379 (18 reqs/sec) | DB: 0.00737 (13%) | 302 Found [http://text.umes.mb.ca/books/confirm/2?k=7cf3fb07a2800196c49080c7d60d3f59600cb366]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:13:25) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiIllvdXIgYm9vayBoYXMgYmVlbiBjb25maXJtZWQh
+BjoKQHVzZWR7BjsGRjoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--a462453145fe210201b4f08856cdf5aa99302b70
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01074 (93 reqs/sec) | Rendering: 0.00744 (69%) | DB: 0.00084 (7%) | 200 OK [http://text.umes.mb.ca/books/2]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:13:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiJZb3VyIGJvb2sgaGFzIGJlZW4gY29uZmlybWVkIQY6
+CkB1c2VkewY7B1Q=--6d32fc12423497223e587d33a7431e9c43c944c5
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00902 (110 reqs/sec) | Rendering: 0.00612 (67%) | DB: 0.00047 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:13:38) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00879 (113 reqs/sec) | Rendering: 0.00769 (87%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#create (for 207.161.48.128 at 2008-08-25 22:14:23) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"create", "controller"=>"books", "book"=>{"seller"=>"umlibbey", "price"=>"60", "title"=>"Fundamentals of Digital Logic with VHDL Design", "author"=>"Brown & Vranesic", "isbn"=>"0072499389", "comments"=>"Perfect Condition. Digital Logic book. Includes CD."}}
+Sent mail to umlibbey@cc.umanitoba.ca
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.17079 (5 reqs/sec) | DB: 0.00373 (2%) | 302 Found [http://text.umes.mb.ca/books]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:14:23) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiT0Jvb2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LiBDaGVjayB5b3VyIGVtYWlsIGZvciB0aGUgY29uZmlybWF0aW9uIGNvZGUu
+BjoKQHVzZWR7BjsGRjoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--849e0ccb21d71606d48dfdf6f88c499a0166449e
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01001 (99 reqs/sec) | Rendering: 0.00677 (67%) | DB: 0.00052 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#confirm (for 207.161.48.128 at 2008-08-25 22:14:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIk9Cb29rIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4g
+Q2hlY2sgeW91ciBlbWFpbCBmb3IgdGhlIGNvbmZpcm1hdGlvbiBjb2RlLgY6
+CkB1c2VkewY7B1Q=--98cfc9add3175102ff7622bc67b294d76a92704e
+  Parameters: {"k"=>"53dcfaf76cf7b92f416698ac63954d61161979a1", "action"=>"confirm", "id"=>"4", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/4
+Completed in 0.05709 (17 reqs/sec) | DB: 0.00874 (15%) | 302 Found [http://text.umes.mb.ca/books/confirm/4?k=53dcfaf76cf7b92f416698ac63954d61161979a1]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:14:31) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiIllvdXIgYm9vayBoYXMgYmVlbiBjb25maXJtZWQh
+BjoKQHVzZWR7BjsGRjoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3
+YzNlODBlY2E0OGM=--a462453145fe210201b4f08856cdf5aa99302b70
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01144 (87 reqs/sec) | Rendering: 0.00823 (71%) | DB: 0.00051 (4%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:14:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiJZb3VyIGJvb2sgaGFzIGJlZW4gY29uZmlybWVkIQY6
+CkB1c2VkewY7B1Q=--6d32fc12423497223e587d33a7431e9c43c944c5
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00994 (100 reqs/sec) | Rendering: 0.00714 (71%) | DB: 0.00044 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:16:20) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01085 (92 reqs/sec) | Rendering: 0.00812 (74%) | DB: 0.00049 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:16:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00553 (180 reqs/sec) | Rendering: 0.00530 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:16:27) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00525 (190 reqs/sec) | Rendering: 0.00501 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:16:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01057 (94 reqs/sec) | Rendering: 0.00742 (70%) | DB: 0.00064 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:17:03) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00530 (188 reqs/sec) | Rendering: 0.00507 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:17:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.13801 (7 reqs/sec) | Rendering: 0.12773 (92%) | DB: 0.00030 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:19:03) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00626 (159 reqs/sec) | Rendering: 0.00598 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:19:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.02252 (44 reqs/sec) | Rendering: 0.01889 (83%) | DB: 0.00037 (1%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:19:34) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.05683 (17 reqs/sec) | Rendering: 0.04424 (77%) | DB: 0.00221 (3%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#index (for 24.78.240.139 at 2008-08-25 22:19:36) [GET]
+  Session ID: cac3786e3b6267db0e362ac81a0cbff4
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00074 (1358 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 24.78.240.139 at 2008-08-25 22:19:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00997 (100 reqs/sec) | Rendering: 0.00704 (70%) | DB: 0.00051 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:19:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.02019 (49 reqs/sec) | Rendering: 0.01667 (82%) | DB: 0.00090 (4%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:19:41) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00967 (103 reqs/sec) | Rendering: 0.00691 (71%) | DB: 0.00053 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 24.78.240.139 at 2008-08-25 22:20:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmUwZDBhZDVjMTlmMmUyOTQ5ZTQ2YTIyYjk2NDAx
+N2QiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--66082525d8734f9f908249fccb692f0b3517655c
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00750 (133 reqs/sec) | Rendering: 0.00726 (96%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 24.78.240.139 at 2008-08-25 22:20:05) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNmUwZDBhZDVjMTlmMmUyOTQ5
+ZTQ2YTIyYjk2NDAxN2Q=--c7924f7f00d50d4abe398073c052dadbb824c7a5
+  Parameters: {"commit"=>"Search!", "authenticity_token"=>"13015091ffafd13cd6e809983a393e88a5689368", "action"=>"list", "controller"=>"books", "query"=>"s"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01158 (86 reqs/sec) | Rendering: 0.00441 (38%) | DB: 0.00055 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.78.240.139 at 2008-08-25 22:20:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmUwZDBhZDVjMTlmMmUyOTQ5ZTQ2YTIyYjk2NDAx
+N2QiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--66082525d8734f9f908249fccb692f0b3517655c
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01157 (86 reqs/sec) | Rendering: 0.00793 (68%) | DB: 0.00067 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-25 22:20:34) [GET]
+  Session ID: 8dc4f0ec2d464341ac8aaffcd9ec3f07
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00062 (1600 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:20:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01334 (74 reqs/sec) | Rendering: 0.00905 (67%) | DB: 0.00071 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-25 22:20:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.16759 (5 reqs/sec) | Rendering: 0.16459 (98%) | DB: 0.00049 (0%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:20:40) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01490 (67 reqs/sec) | Rendering: 0.01330 (89%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:20:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01129 (88 reqs/sec) | Rendering: 0.00752 (66%) | DB: 0.00059 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:20:52) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00624 (160 reqs/sec) | Rendering: 0.00595 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:21:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00555 (180 reqs/sec) | Rendering: 0.00528 (94%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:21:19) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00539 (185 reqs/sec) | Rendering: 0.00508 (94%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:21:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00459 (218 reqs/sec) | Rendering: 0.00436 (95%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:21:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00908 (110 reqs/sec) | Rendering: 0.00615 (67%) | DB: 0.00059 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:21:48) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00541 (184 reqs/sec) | Rendering: 0.00513 (94%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:21:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00862 (116 reqs/sec) | Rendering: 0.00606 (70%) | DB: 0.00045 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:22:28) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01036 (96 reqs/sec) | Rendering: 0.00867 (83%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:22:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00826 (121 reqs/sec) | Rendering: 0.00736 (89%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:22:50) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00808 (123 reqs/sec) | Rendering: 0.00701 (86%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:23:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.00833 (120 reqs/sec) | Rendering: 0.00728 (87%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-25 22:23:23) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2Nj
+NDU3YzNlODBlY2E0OGM=--b1088fd134f140ba4bb3a3f0578af482da86dc39
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.00592 (168 reqs/sec) | Rendering: 0.00569 (96%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-25 22:24:01) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00059 (1691 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:24:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01408 (71 reqs/sec) | Rendering: 0.01045 (74%) | DB: 0.00069 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:24:09) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01117 (89 reqs/sec) | Rendering: 0.00941 (84%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:24:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.16885 (5 reqs/sec) | Rendering: 0.16736 (99%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#new (for 207.161.48.128 at 2008-08-25 22:24:19) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"new", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/new
+Completed in 0.01074 (93 reqs/sec) | Rendering: 0.00907 (84%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/new]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:24:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01124 (88 reqs/sec) | Rendering: 0.00749 (66%) | DB: 0.00064 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:24:28) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"authenticity_token"=>"45b3fef08e034527d93c241837ba89ddd9e76dad", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01825 (54 reqs/sec) | Rendering: 0.00844 (46%) | DB: 0.00050 (2%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-25 22:24:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFlNGNkZDFiZDhmNjE2
+OWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--100049e991ef197e06bbb8c3f09794e840d4615b
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00063 (1575 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-25 22:24:49) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlODNkOGFhMTMyZWRjM2RiMTFl
+NGNkZDFiZDhmNjE2OWM=--f65511b96a49b7982cc4bfb4c493f86d9957c93e
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00938 (106 reqs/sec) | Rendering: 0.00647 (68%) | DB: 0.00045 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 24.78.240.139 at 2008-08-25 22:27:04) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNmUwZDBhZDVjMTlmMmUyOTQ5
+ZTQ2YTIyYjk2NDAxN2Q=--c7924f7f00d50d4abe398073c052dadbb824c7a5
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01886 (53 reqs/sec) | Rendering: 0.00930 (49%) | DB: 0.00046 (2%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 24.78.240.139 at 2008-08-25 22:27:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmUwZDBhZDVjMTlmMmUyOTQ5ZTQ2YTIyYjk2NDAx
+N2QiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--66082525d8734f9f908249fccb692f0b3517655c
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00984 (101 reqs/sec) | Rendering: 0.00685 (69%) | DB: 0.00045 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing ApplicationController#index (for 66.249.66.164 at 2008-08-26 03:19:24) [GET]
+  Session ID: 4c646dbc7979c7c44e1baf949e195ba0
+  Parameters: {"page"=>"3"}
+
+
+ActionController::RoutingError (No route matches "/browse" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 124.125.235.180 at 2008-08-26 06:04:56) [GET]
+  Session ID: 36a14298ee4aef05a64f499b58abbb98
+  Parameters: {"page"=>"2"}
+
+
+ActionController::RoutingError (No route matches "/browse" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 59.162.126.122 at 2008-08-26 06:04:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"page"=>"2"}
+
+
+ActionController::RoutingError (No route matches "/browse" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-26 12:07:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00515 (194 reqs/sec) | DB: 0.00026 (5%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-26 12:07:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.43770 (2 reqs/sec) | Rendering: 0.26780 (61%) | DB: 0.09389 (21%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#index (for 66.225.139.44 at 2008-08-26 12:08:08) [GET]
+  Session ID: faa7fbb23164eb3e2a935d4a48573731
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00053 (1872 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 66.225.139.44 at 2008-08-26 12:08:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00986 (101 reqs/sec) | Rendering: 0.00666 (67%) | DB: 0.00055 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-26 12:08:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.03276 (30 reqs/sec) | Rendering: 0.03031 (92%) | DB: 0.00041 (1%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-26 12:10:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00964 (103 reqs/sec) | Rendering: 0.00686 (71%) | DB: 0.00048 (4%) | 200 OK [http://text.umes.mb.ca/books/2]
+
+
+Processing BooksController#search (for 207.161.48.128 at 2008-08-26 12:10:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"search", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/search
+Completed in 0.02683 (37 reqs/sec) | Rendering: 0.02653 (98%) | DB: 0.00000 (0%) | 200 OK [http://text.umes.mb.ca/books/search]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-26 12:10:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00981 (101 reqs/sec) | Rendering: 0.00715 (72%) | DB: 0.00045 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 207.161.48.128 at 2008-08-26 12:10:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00850 (117 reqs/sec) | Rendering: 0.00601 (70%) | DB: 0.00054 (6%) | 200 OK [http://text.umes.mb.ca/books/3]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-26 12:17:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00063 (1577 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-26 12:17:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.02481 (40 reqs/sec) | Rendering: 0.00801 (32%) | DB: 0.01388 (55%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#index (for 207.161.48.128 at 2008-08-26 12:45:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00566 (176 reqs/sec) | DB: 0.00031 (5%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 207.161.48.128 at 2008-08-26 12:45:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.04202 (23 reqs/sec) | Rendering: 0.03056 (72%) | DB: 0.00191 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#index (for 74.216.24.113 at 2008-08-26 15:52:12) [GET]
+  Session ID: fd6f179d261919c00a4d575b7403a55f
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00582 (171 reqs/sec) | DB: 0.00028 (4%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 74.216.24.113 at 2008-08-26 15:52:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.04112 (24 reqs/sec) | Rendering: 0.02857 (69%) | DB: 0.00191 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing ApplicationController#index (for 24.76.182.101 at 2008-08-26 16:42:53) [GET]
+  Session ID: b59a7ff6db32979875ec843a38e7d701
+  Parameters: {"show"=>"20"}
+
+
+ActionController::RoutingError (No route matches "/browse" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 24.76.182.101 at 2008-08-26 16:43:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00571 (174 reqs/sec) | DB: 0.00030 (5%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:43:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--44eaaccebd4c0dbe9343172e2df081b2848c64b0
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.04405 (22 reqs/sec) | Rendering: 0.03110 (70%) | DB: 0.00231 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:43:07) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"authenticity_token"=>"d57095593197ae00e33a1ef339acb991c696edcc", "action"=>"list", "controller"=>"books", "query"=>"INTRODUCTION TO STATICS"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.05511 (18 reqs/sec) | Rendering: 0.00361 (6%) | DB: 0.00037 (0%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:43:11) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"authenticity_token"=>"d57095593197ae00e33a1ef339acb991c696edcc", "action"=>"list", "controller"=>"books", "query"=>"frye"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01176 (85 reqs/sec) | Rendering: 0.00405 (34%) | DB: 0.00099 (8%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:43:14) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"authenticity_token"=>"d57095593197ae00e33a1ef339acb991c696edcc", "action"=>"list", "controller"=>"books", "query"=>"yookoso"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01074 (93 reqs/sec) | Rendering: 0.00435 (40%) | DB: 0.00054 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:43:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01101 (90 reqs/sec) | Rendering: 0.00799 (72%) | DB: 0.00064 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:43:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01001 (99 reqs/sec) | Rendering: 0.00726 (72%) | DB: 0.00055 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:43:44) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"authenticity_token"=>"d57095593197ae00e33a1ef339acb991c696edcc", "action"=>"list", "controller"=>"books", "query"=>"FUNDAMENTALS OF LOGIC"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.03670 (27 reqs/sec) | Rendering: 0.00582 (15%) | DB: 0.00070 (1%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 24.76.182.101 at 2008-08-26 16:43:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01517 (65 reqs/sec) | Rendering: 0.01287 (84%) | DB: 0.00042 (2%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:44:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.02037 (49 reqs/sec) | Rendering: 0.01721 (84%) | DB: 0.00058 (2%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:44:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01010 (98 reqs/sec) | Rendering: 0.00749 (74%) | DB: 0.00047 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 24.76.182.101 at 2008-08-26 16:44:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.14636 (6 reqs/sec) | Rendering: 0.14378 (98%) | DB: 0.00049 (0%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:44:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00931 (107 reqs/sec) | Rendering: 0.00687 (73%) | DB: 0.00045 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 24.76.182.101 at 2008-08-26 16:44:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00804 (124 reqs/sec) | Rendering: 0.00583 (72%) | DB: 0.00041 (5%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:45:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00898 (111 reqs/sec) | Rendering: 0.00660 (73%) | DB: 0.00045 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing ApplicationController#index (for 24.76.182.101 at 2008-08-26 16:46:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/view/23" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 24.76.182.101 at 2008-08-26 16:46:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"show"=>"20"}
+
+
+ActionController::RoutingError (No route matches "/browse" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 24.76.182.101 at 2008-08-26 16:46:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"show"=>"20"}
+
+
+ActionController::RoutingError (No route matches "/browse" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/request_handler.rb:38:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_request_handler.rb:163:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:307:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:276:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:274:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:165:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/utils.rb:163:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:273:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/application_spawner.rb:177:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:270:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:263:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:135:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:112:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/railz/framework_spawner.rb:87:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:224:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:219:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:122:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/spawn_manager.rb:253:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:317:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/lib/passenger/abstract_server.rb:168:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.0.2/bin/passenger-spawn-server:46
+
+Rendering ./public/404.html (404 Not Found)
+
+
+Processing BooksController#index (for 24.76.182.101 at 2008-08-26 16:46:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00060 (1661 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 24.76.182.101 at 2008-08-26 16:46:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmQxZDAxMDQ3N2JkNWRjZWMxNzQ0NDhhMjRiYjU1
+OGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--47ece2442e69cf6fc6164e5673d9a21502fdac27
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.00894 (111 reqs/sec) | Rendering: 0.00659 (73%) | DB: 0.00046 (5%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#index (for 216.55.230.80 at 2008-08-26 16:55:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00568 (175 reqs/sec) | DB: 0.00030 (5%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 216.55.230.80 at 2008-08-26 16:55:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.04447 (22 reqs/sec) | Rendering: 0.03144 (70%) | DB: 0.00210 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#show (for 216.55.230.80 at 2008-08-26 16:55:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.01447 (69 reqs/sec) | Rendering: 0.01204 (83%) | DB: 0.00047 (3%) | 200 OK [http://text.umes.mb.ca/books/3]
+
+
+Processing BooksController#show (for 216.55.230.80 at 2008-08-26 16:55:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/show
+Completed in 0.00829 (120 reqs/sec) | Rendering: 0.00579 (69%) | DB: 0.00043 (5%) | 200 OK [http://text.umes.mb.ca/books/4]
+
+
+Processing BooksController#index (for 216.55.230.80 at 2008-08-26 16:55:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"index", "controller"=>"books"}
+Redirected to http://text.umes.mb.ca/books/list
+Completed in 0.00063 (1577 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://text.umes.mb.ca/]
+
+
+Processing BooksController#list (for 216.55.230.80 at 2008-08-26 16:55:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01171 (85 reqs/sec) | Rendering: 0.00892 (76%) | DB: 0.00054 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 216.55.230.80 at 2008-08-26 16:55:58) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"authenticity_token"=>"4cda0801db06fa288ec5a71a7977acc636991210", "action"=>"list", "controller"=>"books", "query"=>"vhdl"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01354 (73 reqs/sec) | Rendering: 0.00587 (43%) | DB: 0.00057 (4%) | 200 OK [http://text.umes.mb.ca/books/list]
+
+
+Processing BooksController#list (for 216.55.230.80 at 2008-08-26 16:56:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjhlZWNlZDdhMDY0MjEyY2NjNDU3YzNlODBlY2E0
+OGMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--62f5c1bf16d3415dd00dd7d436abf9de71012493
+  Parameters: {"action"=>"list", "controller"=>"books"}
+Rendering template within layouts/application
+Rendering books/list
+Completed in 0.01007 (99 reqs/sec) | Rendering: 0.00722 (71%) | DB: 0.00063 (6%) | 200 OK [http://text.umes.mb.ca/books/list]
